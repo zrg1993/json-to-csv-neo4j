@@ -49,7 +49,7 @@ def reduce_item(key, value):
 
     #Reduction Condition 2
     elif type(value) is dict:
-        sub_keys = value.keys()
+        sub_keys = list(value.keys())
         for sub_key in sub_keys:
             reduce_item(key+'_'+to_string(sub_key), value[sub_key])
     
@@ -82,7 +82,7 @@ if __name__ == "__main__":
             reduced_item = {}
             reduce_item(node, item)
 
-            header += reduced_item.keys()
+            header += list(reduced_item.keys())
 
             processed_data.append(reduced_item)
 
@@ -95,4 +95,4 @@ if __name__ == "__main__":
             for row in processed_data:
                 writer.writerow(row)
 
-        print ("Just completed writing csv file with %d columns" % len(header))
+        print(("Just completed writing csv file with %d columns" % len(header)))
