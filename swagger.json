@@ -39,7 +39,10 @@
           "200": {
             "description": "A list of titles",
             "schema": {
-              "type": "array"
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           }
         }
