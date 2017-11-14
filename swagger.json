@@ -39,23 +39,7 @@
           "200": {
             "description": "A list of titles",
             "schema": {
-              "type": "array",
-              "items": {
-                "required": [
-                  "username"
-                ],
-                "properties": {
-                  "firstName": {
-                    "type": "string"
-                  },
-                  "lastName": {
-                    "type": "string"
-                  },
-                  "username": {
-                    "type": "string"
-                  }
-                }
-              }
+              "type": "array"
             }
           }
         }
