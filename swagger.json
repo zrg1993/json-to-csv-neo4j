@@ -9,7 +9,6 @@
     "https"
   ],
   "host": "conceptmap.cfapps.io",
-  "basePath": "/",
   "paths": {
     "/articlesearch": {
       "get": {
